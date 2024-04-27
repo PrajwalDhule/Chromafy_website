@@ -1,0 +1,22 @@
+---
+import "../styles/navbar.css"
+// interface Props {
+// 	title: string;
+// 	body: string;
+// 	href: string;
+// }
+
+const { currentPage = 'Home'} = Astro.props;
+---
+
+<nav  class="bg-chroma-background-75">
+  <!-- <a><img/></a> -->
+  <a>Logo</a>
+  <ul>
+    <li class={currentPage == 'Home' ? "selected" : ""}><a href="/">Home</a></li>
+    <li class={currentPage == 'Docs' ? "selected" : ""}><a href="/docs">Docs</a></li>
+    <!-- <li class={currentPage == 'About' ? "selected" : ""}><a href="/">About</a></li> -->
+    <li class={currentPage == 'Contact' ? "selected" : ""}><a href="/">Contact</a></li>
+  </ul>
+</nav>
+

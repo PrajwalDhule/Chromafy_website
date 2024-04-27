@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  color: var(--chroma-text, black);
+
+  a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+  }
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  position: relative;
+}
+
+.grain-overlay {
+  z-index: -1;
+  opacity: 0.06;
+  background-image: url("../assets/grainNoise2.gif");
+  background-position: 0 0;
+  background-size: auto;
+  display: block;
+  position: fixed;
+  top: -80%;
+  bottom: -80%;
+  left: 0%;
+  right: 0%;
+}
