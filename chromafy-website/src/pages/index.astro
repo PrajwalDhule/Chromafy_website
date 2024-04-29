@@ -10,7 +10,7 @@ import StarsIcon from "../components/StarsIcon.astro"
 ---
 
 <Layout title="Welcome to Astro.">
-  <!-- <div class="grain-overlay"></div> -->
+  <div class="grain-overlay"></div>
   <Navbar currentPage="Home" />
   <main>
     <div class="hero"
@@ -89,21 +89,28 @@ import StarsIcon from "../components/StarsIcon.astro"
     <section class="">
       <h2>How Does it Work?</h2>
       <p class="description"
-        >Each palette contains five colors: text, background, primary,
-        secondary, and accent. You can apply these colors to any element using
-        specific class names or CSS variables.</p
+        ><b>Five-Color Palette:</b> Each Chromafy palette contains five colors:
+        text, background, primary, secondary, and accent. You can apply these
+        colors to any element using specific class names or CSS variables.</p
       >
       <p class="description"
-        >On clicking the randomize button, Chromafy generates a new color
-        palette that is automatically applied to the appropriate elements on the
-        webpage, This feature makes it easy to experiment with different color
-        schemes without manually setting colors.</p
+        ><b>Randomize and Apply:</b> On clicking the randomize button, Chromafy
+        generates a new color palette that is automatically applied to the
+        appropriate elements on the webpage, This feature makes it easy to
+        experiment with different color schemes without manually setting
+        colors.</p
       >
       <p class="description"
-        >You can export these colors for use in your codebase, to smoothly
-        transition to implementation. <br />To best use Chromafy to fit your
-        needs, refer to Chromafy docs to go more in depth understand where and
-        how to use appropriate class names or css variables.
+        ><b>Export for Implementation:</b> Once you're satisfied with the
+        palette, you can export these colors for use in your codebase, for a
+        seamless transition from design to implementation.
+        <!-- <br /> -->
+      </p>
+      <p class="description"
+        ><b>Detailed Documentation:</b>
+        To best use Chromafy to fit your needs, refer to Chromafy docs to go
+        more in depth and understand where and how to use appropriate class
+        names or css variables.
       </p>
       <button class="fg-chroma-background bg-chroma-primary"
         >Go to Chromafy Docs</button

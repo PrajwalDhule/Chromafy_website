@@ -1,14 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
-import "../styles/index.css"
-import recommendedLight from "../assets/recommendedLight.svg"
+import "../styles/docs.css"
+import clasNameExample from "../../public/classNameExample.svg"
 import { Image } from 'astro:assets';
-import RecommendedIcon from "../components/RecommendedIcon.astro"
-import StarsIcon from "../components/StarsIcon.astro"
 ---
 
 <Layout title='Chromafy Docs'>
-    <Navbar currentPage="Docs"/>
+    <div class="docs-body">
+        <Navbar currentPage="Docs"/>
+    <main><Image src={clasNameExample} alt='class name example'/></main>
+    </div>
 </Layout>

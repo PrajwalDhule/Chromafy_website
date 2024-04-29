@@ -114,7 +114,7 @@ main section h2 {
 main section p.description {
   text-align: justify;
   line-height: 1.6;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 2em;
 }
 main section p.description i {
@@ -141,6 +141,7 @@ main section .example .example-card .label svg {
 }
 main section button {
   align-self: flex-start;
+  margin-top: 1em;
   background-color: rgb(217, 217, 254);
 }
 
