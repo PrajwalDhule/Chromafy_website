@@ -12,6 +12,17 @@ nav {
   // background-colorgba(255, 255, 255, 0.75)75);
   background-color: hsla(0, 0%, 100%, 0.75);
   backdrop-filter: blur(10px);
+  .logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.25rem;
+    img {
+      height: 2em;
+      width: auto;
+    }
+  }
   a {
     padding: 1em 1.25em;
   }
@@ -30,6 +41,9 @@ nav {
       border-radius: 0.5em;
       // background-color: white;
       // border: 1px solid hsla(217, 8%, 81%, 0.9);
+      display: flex;
+      justify-content: left;
+      align-items: center;
       cursor: pointer;
       & + li {
         margin-left: 1.5em;

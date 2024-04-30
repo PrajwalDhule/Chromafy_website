@@ -1,8 +1,96 @@
-.docs-body main {
-  padding-top: 15vh;
+.docs-body {
+  display: flex;
 }
-.docs-body main img {
-  width: 60vw;
+.docs-body .sidebar {
+  display: none;
+  position: fixed;
+  border: 1px solid hsla(0, 0%, 0%, 0.125);
+  border-radius: 0.5em;
+  padding: 1em 0.75em;
+  width: 17.5vw;
+  margin: 0 5vw;
+  opacity: 0.9;
+  margin-top: 15vh;
+}
+.docs-body .sidebar ul li {
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.docs-body .sidebar ul li:hover {
+  background-color: hsla(0, 0%, 0%, 0.05);
+}
+.docs-body .sidebar ul li.selected {
+  background-color: hsla(0, 0%, 0%, 0.075);
+  font-weight: 500;
+}
+.docs-body .sidebar ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0.75em;
+}
+.docs-body main {
+  margin-left: 0;
+  width: 90vw;
+  margin-left: 5vw;
+}
+.docs-body main section {
+  margin-top: 15vh;
+}
+.docs-body main section h2 {
+  font-size: 2.5rem;
+}
+.docs-body main section h3 {
+  font-size: 2rem;
+  margin-top: 2em;
+}
+.docs-body main section p {
+  font-size: 1.1rem;
+  margin: 2em 0;
+  line-height: 1.75;
+}
+.docs-body main section p span {
+  font-weight: 500;
+}
+.docs-body main section p span:nth-child(1) {
+  font-weight: 600;
+}
+.docs-body main section img {
+  width: 90vw;
   height: auto;
-  margin-left: 15vw;
+  margin-top: 2em;
+}
+.docs-body main section img.example-desktop {
+  display: none;
+}
+.docs-body main section img.example-mobile {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .docs-body .sidebar {
+    display: block;
+  }
+  .docs-body main {
+    margin-left: 27.5vw;
+    width: 55vw;
+  }
+  .docs-body main section p {
+    line-height: 2;
+  }
+  .docs-body main section p a {
+    display: inline;
+    text-decoration: underline;
+  }
+  .docs-body main section img {
+    width: 100%;
+    height: auto;
+  }
+  .docs-body main section img.example-mobile {
+    display: none;
+  }
+  .docs-body main section img.example-desktop {
+    display: block;
+  }
 }/*# sourceMappingURL=docs.css.map */

@@ -28,6 +28,10 @@ body {
   position: relative;
 }
 
+ul {
+  list-style: none;
+}
+
 .grain-overlay {
   z-index: -1;
   opacity: 0.05;

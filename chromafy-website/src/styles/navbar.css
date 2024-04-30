@@ -12,6 +12,17 @@ nav {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
+nav .logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1.25rem;
+}
+nav .logo img {
+  height: 2em;
+  width: auto;
+}
 nav a {
   padding: 1em 1.25em;
 }
@@ -26,6 +37,9 @@ nav ul {
 }
 nav ul li {
   border-radius: 0.5em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
   cursor: pointer;
 }
 nav ul li + li {
