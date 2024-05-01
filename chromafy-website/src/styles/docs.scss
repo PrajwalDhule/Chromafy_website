@@ -6,41 +6,58 @@
     width: 17.5vw;
     margin-inline: 5vw;
     margin-top: 15vh;
-    padding: 1em 0.75em;
+    height: 80vh;
     // background-color: hsla(0, 0%, 50%, 0.01);
-    border: 1px solid hsla(0, 0%, 50%, 0.4);
-    border-radius: 0.5em;
-    opacity: 0.9;
-    ul {
-      // font-size: 1.1rem;
-      li {
-        border-radius: 0.5em;
-        cursor: pointer;
-        &:hover {
-          background-color: hsla(0, 0%, 0%, 0.05);
-        }
-        &.selected {
-          background-color: hsla(0, 0%, 50%, 0.15);
-          font-weight: 500;
-        }
-        a {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          width: 100%;
 
-          padding: 0.75em;
+    opacity: 0.9;
+    & > div {
+      border: 1px solid hsla(0, 0%, 50%, 0.4);
+      border-radius: 0.5em;
+
+      padding: 1em 0.75em;
+
+      ul {
+        // font-size: 1.1rem;\
+        li {
+          border-radius: 0.5em;
+          cursor: pointer;
+          &:hover {
+            background-color: hsla(0, 0%, 0%, 0.05);
+          }
+          &.selected {
+            background-color: hsla(0, 0%, 50%, 0.15);
+            font-weight: 500;
+          }
+          a {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+
+            padding: 0.75em;
+          }
         }
-      }
-      li + li {
-        // margin-top: 0.25em;
+        li + li {
+          // margin-top: 0.25em;
+        }
       }
     }
   }
+
+  .update-date {
+    // margin-top: 15vh;
+    margin: auto 0 0 0;
+    line-height: 1.5;
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
   main {
     margin-left: 0;
     width: 90vw;
     margin-left: 5vw;
+    padding-bottom: 10vh;
     section {
       margin-top: 15vh;
       h2 {
@@ -76,6 +93,12 @@
           display: block;
         }
       }
+      img.control-buttons-img {
+        width: 90vw;
+      }
+      img.export-gif {
+        display: none;
+      }
       pre,
       code {
         padding: 0.25em 0.5em;
@@ -95,7 +118,9 @@
 @media screen and (min-width: 800px) {
   .docs-body {
     .sidebar {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     main {
       margin-left: 27.5vw;
@@ -115,6 +140,12 @@
           &.example-desktop {
             display: block;
           }
+        }
+        img.control-buttons-img {
+          width: 35vw;
+        }
+        img.export-gif {
+          display: block;
         }
       }
     }
