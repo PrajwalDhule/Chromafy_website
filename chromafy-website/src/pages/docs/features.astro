@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import { Image } from 'astro:assets';
+import "../../styles/docs.css"
+---
+
+<Layout title="Chromafy Docs">
+  <Navbar currentPage="Docs" />
+  <div class="docs-body">
+    <Sidebar/>
+    <main>
+        <section>
+        <h2>Chromafy Documentation: Understanding the Extension's Features</h2>
+
+<p>This page dives into the functionalities offered by Chromafy's intuitive interface, empowering you to effortlessly transform your website's color scheme.</p>
+
+<h3>Color Palette Selection Boxes:</h3>
+
+<p>
+    Chromafy presents five color boxes arranged horizontally. These boxes represent the core colors of your website's palette:</p>
+
+<p><span>Primary: </span> This color serves as the foundation of your scheme, often used for branding elements like logos and buttons.</p>
+<p><span>Secondary: </span> This color complements the primary color and is frequently applied for accents and highlights.</p>
+<p><span>Accent 1-3: </span> These colors provide additional options for creating visual interest and contrast within your website.</p>
+
+<p>**Clicking on any color box** opens a color picker (discussed later) that allows you to choose a new color for that specific slot in your palette.
+</p>
+<p>
+**Shortcut:** Pressing the corresponding number key (1-5) while a color box is focused might be an option for quick selection (implementation depends on technical feasibility).
+</p>
+
+<h3>Theme Button:</h3>
+
+<p>
+    The theme button, often represented by a house or palette icon, offers a convenient way to apply pre-designed color themes to your website. Clicking this button might reveal a dropdown menu or a separate dialog showcasing various theme options.
+
+**Functionality:** Selecting a theme applies the pre-defined colors of that theme to your Chromafy palette boxes, allowing you to preview and potentially apply the entire theme to your website.
+
+**Shortcut:** Assigning a keyboard shortcut (e.g., `Ctrl + T` or `Cmd + T`) to the theme button can be explored for quicker access (implementation depends on technical feasibility).
+</p>
+
+<!-- ### 3. Randomize (Generate Colors) Button:
+
+Feeling uninspired? The randomize button, typically depicted by a shuffle or dice icon, injects a spark of creativity. Clicking this button generates a brand new set of random colors for your Chromafy palette.
+
+**Functionality:** Each click on the randomize button creates a fresh color combination, allowing you to explore various options until you find a suitable scheme.
+
+**Shortcut:** A keyboard shortcut (e.g., `Spacebar`) for the randomize button could be considered for a more interactive experience (implementation depends on technical feasibility).
+
+### 4. Scheme Button:
+
+The scheme button, sometimes represented by a gear or options icon, provides advanced control over your color palette generation. Clicking this button might open a modal or dropdown menu with options for customizing the color scheme generation process.
+
+**Functionality:**  Depending on the implementation, the scheme button might offer options like:
+
+* **Color Harmony Rules:**  Choose from pre-defined color harmony rules like triadic, analogous, or complementary to ensure visually pleasing color combinations.
+* **Lightness/Darkness Adjustments:**  Fine-tune the overall lightness or darkness of the generated color palette.
+* **Color Space Selection:**  Select the color space (e.g., HSL, RGB) used for color generation.
+
+**Shortcut:** Assigning a keyboard shortcut (e.g., `Ctrl + S` or `Cmd + S`) to the scheme button could be explored for ease of access (implementation depends on technical feasibility).
+
+### 5. Undo and Redo Buttons:
+
+These buttons, represented by arrows pointing left (undo) and right (redo), allow you to navigate through your color palette history.
+
+* **Undo Button:** Clicking this button reverts your palette to the previous state, essentially taking back the last color change you made.
+* **Redo Button:** Clicking this button after an undo action reverses the undo, bringing your palette back to the state before the undo.
+
+**Shortcuts:** Standard keyboard shortcuts for undo (e.g., `Ctrl + Z` or `Cmd + Z`) and redo (e.g., `Ctrl + Y` or `Cmd + Y`) can be implemented for a familiar workflow.
+
+### 6. Export Button:
+
+The export button, often depicted by a download or outward arrow icon, allows you to save your meticulously crafted color palette for future use. Clicking this button might trigger a download or provide options for exporting the palette in different formats.
+
+**Functionality:** The export functionality depends on the specific implementation. Chromafy could offer options to:
+
+* **Download a CSS file:** This file would contain the color variables or class names representing your chosen palette, allowing easy integration into your website's code.
+* **Copy to Clipboard:** The color values could be copied to your clipboard, enabling you to paste them directly into your website's stylesheet.
+
+**Shortcut:** A keyboard shortcut (e.g., `Ctrl + E` or `Cmd + E`) for the export button could be considered for a streamlined workflow (implementation depends on technical feasibility).
+
+### 7. Close Button:
+
+The close button, typically represented by an "X" icon, gracefully dismisses the Chromafy extension interface. Clicking this button hides -->
+   </section>
+</main>
+  </div>
+</Layout>

@@ -3,13 +3,14 @@
   .sidebar {
     display: none;
     position: fixed;
-    border: 1px solid hsla(0, 0%, 0%, 0.125);
-    border-radius: 0.5em;
-    padding: 1em 0.75em;
     width: 17.5vw;
-    margin: 0 5vw;
-    opacity: 0.9;
+    margin-inline: 5vw;
     margin-top: 15vh;
+    padding: 1em 0.75em;
+    // background-color: hsla(0, 0%, 50%, 0.01);
+    border: 1px solid hsla(0, 0%, 50%, 0.4);
+    border-radius: 0.5em;
+    opacity: 0.9;
     ul {
       // font-size: 1.1rem;
       li {
@@ -19,7 +20,7 @@
           background-color: hsla(0, 0%, 0%, 0.05);
         }
         &.selected {
-          background-color: hsla(0, 0%, 0%, 0.075);
+          background-color: hsla(0, 0%, 50%, 0.15);
           font-weight: 500;
         }
         a {
@@ -53,6 +54,10 @@
         font-size: 1.1rem;
         margin: 2em 0;
         line-height: 1.75;
+        a {
+          display: inline;
+          text-decoration: underline;
+        }
         span {
           font-weight: 500;
         }
@@ -71,6 +76,18 @@
           display: block;
         }
       }
+      pre,
+      code {
+        padding: 0.25em 0.5em;
+        background-color: hsla(0, 0%, 50%, 0.1);
+        border-radius: 0.5em;
+        font-family: "IBM Plex Mono", monospace;
+      }
+      pre {
+        padding: 1em 1.5em;
+        line-height: 2;
+        white-space: pre-wrap;
+      }
     }
   }
 }
@@ -87,10 +104,6 @@
       section {
         p {
           line-height: 2;
-          a {
-            display: inline;
-            text-decoration: underline;
-          }
         }
         img {
           //   height: 75vh;

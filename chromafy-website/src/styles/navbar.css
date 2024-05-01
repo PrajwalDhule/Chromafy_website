@@ -5,7 +5,7 @@ nav {
   justify-content: space-between;
   width: 100vw;
   font-size: 0.9rem;
-  padding: 0.25em 2em;
+  padding: 0.25em 1em;
   z-index: 9999;
   border-bottom: 1px solid var(--chroma-text-10, rgba(82, 80, 80, 0.1));
   background-color: hsla(0, 0%, 100%, 0.75);
@@ -17,14 +17,15 @@ nav .logo {
   justify-content: left;
   align-items: center;
   gap: 0.5em;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 nav .logo img {
   height: 2em;
   width: auto;
 }
 nav a {
-  padding: 1em 1.25em;
+  padding: 1em 0.5em 1em 0;
 }
 nav ul {
   display: flex;
@@ -51,6 +52,12 @@ nav ul li.selected a {
 }
 
 @media screen and (min-width: 800px) {
+  nav {
+    padding: 0.25em 2em;
+  }
+  nav .logo {
+    font-size: 1.25rem;
+  }
   nav a {
     padding: 0.5em 1.25em;
   }

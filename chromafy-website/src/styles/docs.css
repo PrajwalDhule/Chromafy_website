@@ -4,13 +4,13 @@
 .docs-body .sidebar {
   display: none;
   position: fixed;
-  border: 1px solid hsla(0, 0%, 0%, 0.125);
-  border-radius: 0.5em;
-  padding: 1em 0.75em;
   width: 17.5vw;
-  margin: 0 5vw;
-  opacity: 0.9;
+  margin-inline: 5vw;
   margin-top: 15vh;
+  padding: 1em 0.75em;
+  border: 1px solid hsla(0, 0%, 50%, 0.4);
+  border-radius: 0.5em;
+  opacity: 0.9;
 }
 .docs-body .sidebar ul li {
   border-radius: 0.5em;
@@ -20,7 +20,7 @@
   background-color: hsla(0, 0%, 0%, 0.05);
 }
 .docs-body .sidebar ul li.selected {
-  background-color: hsla(0, 0%, 0%, 0.075);
+  background-color: hsla(0, 0%, 50%, 0.15);
   font-weight: 500;
 }
 .docs-body .sidebar ul li a {
@@ -50,6 +50,10 @@
   margin: 2em 0;
   line-height: 1.75;
 }
+.docs-body main section p a {
+  display: inline;
+  text-decoration: underline;
+}
 .docs-body main section p span {
   font-weight: 500;
 }
@@ -67,6 +71,18 @@
 .docs-body main section img.example-mobile {
   display: block;
 }
+.docs-body main section pre,
+.docs-body main section code {
+  padding: 0.25em 0.5em;
+  background-color: hsla(0, 0%, 50%, 0.1);
+  border-radius: 0.5em;
+  font-family: "IBM Plex Mono", monospace;
+}
+.docs-body main section pre {
+  padding: 1em 1.5em;
+  line-height: 2;
+  white-space: pre-wrap;
+}
 
 @media screen and (min-width: 800px) {
   .docs-body .sidebar {
@@ -78,10 +94,6 @@
   }
   .docs-body main section p {
     line-height: 2;
-  }
-  .docs-body main section p a {
-    display: inline;
-    text-decoration: underline;
   }
   .docs-body main section img {
     width: 100%;

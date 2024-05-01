@@ -5,4 +5,5 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
+  redirects: { "/docs/": "/docs/setup" },
 });
